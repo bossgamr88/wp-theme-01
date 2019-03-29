@@ -28,3 +28,11 @@ https://developer.wordpress.org/reference/
 
 กฎ wordpress บอกว่าก่อน จะสั่ง menu ได้ ต้องประกาศ ค่ามันก่อน
 สร้างไฟล์ functions.php  เเละกำหนดค่าให้มัน
+
+------------>
+ต่อไปคือ ดึงมาใช้ ใน index 
+ใช้คำสั่ง
+<?php wp_nav_menu( 'theme_location' => 'primary' )?>
+สำคัญคือต้องบอก id  
+มันก็จะ พ่น ค่า menu ออกมา
+

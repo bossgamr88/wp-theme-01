@@ -14,11 +14,7 @@
 				<h1 class="site-title"><a href="#"><?php bloginfo( 'name' ) ?></a></h1>
 			</div>
 			<nav class="site-navigation" role="navigation">
-				<div class="menu">
-					<ul>
-						<li><a href="#">About</a></li>
-					</ul>
-				</div>
+				<?php wp_nav_menu(array('theme_location' => 'primary')  )?>
 			</nav><!-- #site-navigation -->
 		</header><!-- #masthead -->
 
