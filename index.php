@@ -11,7 +11,7 @@
 	<div id="page" class="site">
 		<header class="site-header">
 			<div class="site-branding">
-				<h1 class="site-title"><a href="#">เว็บทดสอบ</a></h1>
+				<h1 class="site-title"><a href="#"><?php bloginfo( 'name' ) ?></a></h1>
 			</div>
 			<nav class="site-navigation" role="navigation">
 				<div class="menu">
