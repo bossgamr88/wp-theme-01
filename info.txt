@@ -1,0 +1,7 @@
+WordPress ก็สามารถ อ้างอิงไฟล์ต่างๆ ได้ถูกต้องเเล้ว
+https://developer.wordpress.org/reference/functions/bloginfo/
+
+ด้วยความรู้จาก บทความนี้ถ้า เรามี web page ที่เป็น html อยู่เเล้วต้องการ
+เเปลงเป็น theme wordpress เราเเค่ใส่ตัวเเปร bloginfo เค้าไปทั้งหมดก็จะใช้งานได้ทันที
+
+ข้อเสีย คือเราจะไม่ได้ใช้ feature ของ wordpress เลย 
