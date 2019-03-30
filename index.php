@@ -1,24 +1,4 @@
-<!DOCTYPE html>
-<html lang="th">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<link rel="stylesheet" href="<?php bloginfo('template_url')?>/seed.css" type="text/css">
-	<link rel="stylesheet" href="<?php bloginfo( 'template_url' )?>/style.css" type="text/css">
-	<title>เว็บทดสอบ</title>
-</head>
-
-<body>
-	<div id="page" class="site">
-		<header class="site-header">
-			<div class="site-branding">
-				<h1 class="site-title"><a href="#"><?php bloginfo( 'name' ) ?></a></h1>
-			</div>
-			<nav class="site-navigation" role="navigation">
-				<?php wp_nav_menu(array('theme_location' => 'primary')  )?>
-			</nav><!-- #site-navigation -->
-		</header><!-- #masthead -->
-
-		<div class="site-content">
+<?php get_header();?>
 			<div class="content-banner">
 				<img src="<?php  bloginfo( 'template_url' )?>/img/banner.jpg">
 			</div>
@@ -32,23 +12,7 @@
 
 			</div>
 
-			<aside class="widget-area">
-				<aside class="widget">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis eros ex, quis pellentesque enim elementum vel.
-				</aside>
-				<aside class="widget">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis eros ex, quis pellentesque enim elementum vel.
-				</aside>
-				<aside class="widget">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis eros ex, quis pellentesque enim elementum vel.
-				</aside>
-			</aside>
-		</div><!-- #content -->
+<?php  get_sidebar() ?>
+<?php get_footer(); ?>
 
-		<footer class="site-footer">
-			<div class="site-info">© 2016 เว็บทดสอบ</div>
-			<div class="site-credit">Theme by <a href="http://seedthemes.com/" target="_blank">SeedThemes</a></div>
-		</footer><!-- site-footer -->
-	</div><!-- #page -->
-</body>
-</html>
+
