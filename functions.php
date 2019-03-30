@@ -5,7 +5,7 @@
             'primary' => 'Primary Menu',
             // 'primary2' => 'Primary Menu2'
     ));
-    
+
     function seed_widgets_init() {
         register_sidebar( array(
             'name'          => __( 'Footer', 'seed' ),

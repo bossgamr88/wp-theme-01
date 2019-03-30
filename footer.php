@@ -4,5 +4,6 @@
 			<div class="site-credit">Theme by <a href="http://seedthemes.com/" target="_blank">SeedThemes</a></div>
 		</footer><!-- site-footer -->
 	</div><!-- #page -->
+	<?php  wp_footer(  )?>
 </body>
 </html>

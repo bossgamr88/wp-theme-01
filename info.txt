@@ -23,8 +23,34 @@ https://developer.wordpress.org/files/2014/10/Screenshot-2019-01-23-00.20.04.png
 https://developer.wordpress.org/reference/functions/register_sidebar/#uses
 
 // ---------->
-การสร้าง Template สำหรับหน้าแรก
+-การสร้าง Template สำหรับหน้าแรก
+forn-page.php เพื่อเเสดงหน้าเเรก ของ web
 
+ทำไมถึงใส่ <?php if (is_active_sidebar( 'banner-1' )) : ?>
 
+is_active_sidebar คือ check ก่อนว่า sidebar ที่ชื่อ banner-1 มีใครทำอะไร
+ก็มันรึป่าว ถ้ามีก็ใช้ไปเรียก dynamic_sidebar
+else ถ้าไม่มี ให้ไปเรียก img ธรรมดามาเเสดง
+<img src="<?php bloginfo( 'template_url' ); ?>/img/banner.jpg">
 
+ด้วยวิธีการนี้จะทำให้ sidebar check ก่อนว่ามี widget อยู่รึป่าว ถ้ามีก็ให้เเสดง ถ้าไม่ีมก็อาจจะไปเอาค่า ตั้งต้น มาเเสดง
+
+ิbanner ไปที่ใส่  เพื่ม widget ข้อความ เเละเอา code html ที่เรียกรุ้ไปเเปะ ก็ได้เหมือนกัน 
+<img src="https://th.seedthemes.com/wp-content/uploads/2016/07/banner-03.jpg" />
+
+// >>>>>>>>>
+เราต้องการมากกว่า รุป เราจะใส่ pluin sideder ก็ได้
+-การใส่โค้ดใน header และ footer เพื่อรองรับปลั๊กอินต่างๆ
+wordpress ให้ขอกำหนด ไว้ว่า ใน tag <head> ต้องมีคำสั่ง 
+<?php wp_head() ?> เป็นคำสั่งที่จะให้ pluin ต่างๆ เเทรก code javascript css เเละ code ต่างๆ 
+เข้ามาใน ส่วนหัว ได้ 
+
+ต่อมาใน tag <footer> wordpress ให้ของกำหนดอีกว่าต้องใส่คำสั่ง 
+ก่อนที่จะเปิด body ต้องมีคำสั่ง <?php  wp_footer(  )?> 
+เพื่อให้  pluin ต่างๆ เเทรก code ในส่วนท้ายได้ด้วย
+
+//------>
+หมายเหตุ: โค้ดต่างๆ สามารถ copy จากธีม Todsorb 
+ที่มีให้โหลดในหน้าสมาชิก การบ้านคือ ดูว่ามีคำสั่งอื่นๆ อีกหรือไม่ ใช้สำหรับทำอะไร
+ เพื่อเตรียมพร้อมสำหรับการเรียนรู้ธีม Seed ที่ซับซ้อนขึ้น
 

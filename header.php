@@ -5,6 +5,7 @@
 	<link rel="stylesheet" href="<?php bloginfo('template_url')?>/seed.css" type="text/css">
 	<link rel="stylesheet" href="<?php bloginfo( 'template_url' )?>/style.css" type="text/css">
 	<title>เว็บทดสอบ</title>
+	<?php wp_head() ?>
 </head>
 
 <body>
