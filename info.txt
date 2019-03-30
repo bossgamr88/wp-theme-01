@@ -12,5 +12,13 @@ the_permalink = link ถาวร
 https://developer.wordpress.org/files/2014/10/Screenshot-2019-01-23-00.20.04.png
 
 
+- เพิ่มไฟล์ single 
+- เพิ่มไฟล์ page 
+
+
+//---------->
+การสร้าง Sidebar เพื่อใส่ Widget
+
+
 
 
