@@ -1,11 +1,5 @@
-<aside class="widget-area">
-				<!-- <aside class="widget">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis eros ex, quis pellentesque enim elementum vel.
-				</aside>
-				<aside class="widget">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis eros ex, quis pellentesque enim elementum vel.
-				</aside>
-				<aside class="widget">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis eros ex, quis pellentesque enim elementum vel.
-				</aside> -->
-			</aside>
+<?php if (is_active_sidebar( 'footer-1' )): ?>
+	<aside class="widget-area">
+		<?php dynamic_sidebar( 'footer-1' ); ?>
+	</aside>
+<?php endif; ?>

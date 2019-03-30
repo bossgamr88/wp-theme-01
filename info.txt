@@ -18,6 +18,12 @@ https://developer.wordpress.org/files/2014/10/Screenshot-2019-01-23-00.20.04.png
 
 //---------->
 การสร้าง Sidebar เพื่อใส่ Widget
+สร้าง Widget
+หลักการก็เหมือนกับการ สร้าง menu เราไปสร้าง ประกาศ ตัวเเปร ไว้ไใน functions.php
+https://developer.wordpress.org/reference/functions/register_sidebar/#uses
+
+// ---------->
+การสร้าง Template สำหรับหน้าแรก
 
 
 
